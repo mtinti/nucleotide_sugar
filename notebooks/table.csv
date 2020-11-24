@@ -1,0 +1,8 @@
+,Protein IDs,desc,Gene Name or Symbol,Fraction 1,Fraction 2
+70,Tb927.10.2010:mRNA-p1;Tb11.v5.0732.1-p1,hexokinase,HK1,453040.0,721490.0
+188,Tb927.9.12630:mRNA-p1;Tb927.9.12590:mRNA-p1;Tb927.9.12570:mRNA-p1;Tb927.9.12550:mRNA-p1;Tb927.9.12610:mRNA-p1,"glycerol kinase, glycosomal",glk1,525440.0,1108700.0
+112,Tb927.11.5520:mRNA-p1,triosephosphate isomerase,TIM,582560.0,1544700.0
+157,Tb927.6.4300:mRNA-p1;Tb927.6.4280:mRNA-p1;Tb927.10.6880:mRNA-p1;Tb11.v5.0516.1-p1,"glyceraldehyde 3-phosphate dehydrogenase, glycosomal",GAPDH,949130.0,1288200.0
+66,Tb927.10.15410:mRNA-p1,glycosomal malate dehydrogenase,gMDH,986720.0,1547800.0
+174,Tb927.8.3530:mRNA-p1,"glycerol-3-phosphate dehydrogenase [NAD+], glycosomal",G3PDH,544640.0,2176100.0
+35,Tb927.10.5620:mRNA-p1;Tb11.v5.0531.1-p1,"fructose-bisphosphate aldolase, glycosomal",ALD,2115900.0,3157000.0
