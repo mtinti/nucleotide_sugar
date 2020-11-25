@@ -13333,29 +13333,12 @@ School of Life Sciences, University of Dundee</code></pre>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gene_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../txt/GenesByTaxon_Summary.txt&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="n">symbol_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">gene_table</span><span class="p">[</span><span class="s1">&#39;Gene ID&#39;</span><span class="p">],</span><span class="n">gene_table</span><span class="p">[</span><span class="s1">&#39;Gene Name or Symbol&#39;</span><span class="p">]))</span>
 <span class="n">symbol_dict</span><span class="p">[</span><span class="s1">&#39;Tb927.8.520&#39;</span><span class="p">]</span>
+<span class="n">symbol_dict</span><span class="p">[</span><span class="s1">&#39;Tb927.4.1360&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;Aldose-1-Epi&#39;</span>
+<span class="n">symbol_dict</span><span class="p">[</span><span class="s1">&#39;Tb927.7.5680&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;dRPA&#39;</span>
+<span class="n">symbol_dict</span><span class="p">[</span><span class="s1">&#39;Tb927.11.1020&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;RK&#39;</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>nan</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13665,7 +13648,7 @@ tot  78  entries removed
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x124e15130&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x122999160&gt;</pre>
 </div>
 
 </div>
@@ -14341,7 +14324,7 @@ tot  78  entries removed
       <td>10.020604</td>
       <td>Tb927.7.5680:mRNA-p1</td>
       <td>deoxyribose-phosphate aldolase, putative</td>
-      <td>NaN</td>
+      <td>dRPA</td>
     </tr>
     <tr>
       <th>200</th>
@@ -14555,9 +14538,52 @@ tot  78  entries removed
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="save-table">save table<a class="anchor-link" href="#save-table">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;table.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Split-image-in-3-panels">Split image in 3 panels<a class="anchor-link" href="#Split-image-in-3-panels">&#182;</a></h3><h4 id="panel-1">panel 1<a class="anchor-link" href="#panel-1">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">ticker</span>
+<span class="n">formatter</span> <span class="o">=</span> <span class="n">ticker</span><span class="o">.</span><span class="n">ScalarFormatter</span><span class="p">(</span><span class="n">useMathText</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">formatter</span><span class="o">.</span><span class="n">set_scientific</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span> 
+<span class="n">formatter</span><span class="o">.</span><span class="n">set_powerlimits</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;grayscale&#39;</span><span class="p">)</span>
@@ -14613,7 +14639,7 @@ tot  78  entries removed
 
 
 <div class="output_png output_subarea ">
-<img src="analysis_files/analysis_34_0.png"
+<img src="analysis_files/analysis_38_0.png"
 >
 </div>
 
@@ -14623,9 +14649,16 @@ tot  78  entries removed
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="panel-2">panel 2<a class="anchor-link" href="#panel-2">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;grayscale&#39;</span><span class="p">)</span>
@@ -14681,7 +14714,7 @@ tot  78  entries removed
 
 
 <div class="output_png output_subarea ">
-<img src="analysis_files/analysis_35_0.png"
+<img src="analysis_files/analysis_40_0.png"
 >
 </div>
 
@@ -14691,21 +14724,19 @@ tot  78  entries removed
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="panel-3">panel 3<a class="anchor-link" href="#panel-3">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">ticker</span>
-<span class="n">formatter</span> <span class="o">=</span> <span class="n">ticker</span><span class="o">.</span><span class="n">ScalarFormatter</span><span class="p">(</span><span class="n">useMathText</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">formatter</span><span class="o">.</span><span class="n">set_scientific</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span> 
-<span class="n">formatter</span><span class="o">.</span><span class="n">set_powerlimits</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span> 
-
-
-
-
-
-<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;grayscale&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;grayscale&#39;</span><span class="p">)</span>
 <span class="n">font_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;fontname&#39;</span><span class="p">:</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span><span class="mi">12</span><span class="p">}</span>
 
 <span class="n">temp</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Protein IDs&#39;</span><span class="p">,</span><span class="s1">&#39;desc&#39;</span><span class="p">,</span><span class="s1">&#39;Gene Name or Symbol&#39;</span><span class="p">]</span><span class="o">+</span><span class="n">cols</span><span class="p">]</span>
@@ -14757,7 +14788,7 @@ tot  78  entries removed
 
 
 <div class="output_png output_subarea ">
-<img src="analysis_files/analysis_36_0.png"
+<img src="analysis_files/analysis_42_0.png"
 >
 </div>
 
@@ -14769,10 +14800,10 @@ tot  78  entries removed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;table.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
@@ -14786,19 +14817,6 @@ tot  78  entries removed
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert --to html_toc analysis.ipynb
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git init
 </pre></div>
 
     </div>

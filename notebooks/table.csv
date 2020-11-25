@@ -1,4 +1,23 @@
 ,Protein IDs,desc,Gene Name or Symbol,Fraction 1,Fraction 2
+50,Tb927.1.3830:mRNA-p1,"glucose-6-phosphate isomerase, glycosomal",PGI,3109.5,5612.3
+42,Tb927.11.11330:mRNA-p1;Tb11.v5.1035.1-p1;Tb927.7.710:mRNA-p1;Tb927.11.11290:mRNA-p1;Tb11.v5.1034.1-p1,heat shock protein 70,HSP70,13510.0,0.0
+51,Tb927.1.720:mRNA-p1;Tb927.1.710:mRNA-p1;Tb927.1.700:mRNA-p1,phosphoglycerate kinase,PGKA,4282.1,10640.0
+74,Tb927.10.240:mRNA-p1,"peroxin 14, putative",PEX14,4292.8,11948.0
+200,Tb927.9.9000:mRNA-p1,isopentenyl-diphosphate delta-isomerase (type II),idi1,0.0,20304.0
+154,Tb927.5.930:mRNA-p1;Tb11.v5.0613.1-p1;Tb927.5.940:mRNA-p1;Tb927.10.3650:mRNA-p1,NADH-dependent fumarate reductase,FRDg,7376.0,12929.0
+168,Tb927.7.5680:mRNA-p1,"deoxyribose-phosphate aldolase, putative",dRPA,0.0,22484.0
+102,Tb927.11.14780:mRNA-p1,phosphomannose isomerase,PMI,5037.3,40711.0
+97,Tb927.11.11520:mRNA-p1,glycosomal membrane protein,PEX11,32780.0,22571.0
+122,Tb927.11.900:mRNA-p1;Tb927.8.3690:mRNA-p1,"isocitrate dehydrogenase, putative",IDH,27514.0,35389.0
+136,Tb927.4.1360:mRNA-p1,"Glucose-6-phosphate 1-epimerase, putative",Aldose-1-Epi,105420.0,5274.0
+147,Tb927.5.2080:mRNA-p1,GMP reductase,GMPR,77872.0,41476.0
+68,Tb927.10.16120:mRNA-p1,inosine-5-monophosphate dehydrogenase,IMPDH1,89900.0,89019.0
+116,Tb927.11.6280:mRNA-p1,pyruvate phosphate dikinase,PPDK,87253.0,99913.0
+62,Tb927.10.1390:mRNA-p1,Hypoxanthine-guanine-xanthine phosphoribosyltransferase,HGXPRT,48473.0,166190.0
+199,Tb927.9.8720:mRNA-p1,"fructose-1,6-bisphosphatase",FBPase,154540.0,126820.0
+91,Tb927.11.1020:mRNA-p1,"ribokinase, putative",RK,89515.0,207000.0
+133,Tb927.3.3270:mRNA-p1,"ATP-dependent 6-phosphofructokinase, glycosomal",PFK,165770.0,133970.0
+129,Tb927.2.4210:mRNA-p1,"Phosphoenolpyruvate carboxykinase [ATP], glycosomal",PEPCK,149870.0,269980.0
 70,Tb927.10.2010:mRNA-p1;Tb11.v5.0732.1-p1,hexokinase,HK1,453040.0,721490.0
 188,Tb927.9.12630:mRNA-p1;Tb927.9.12590:mRNA-p1;Tb927.9.12570:mRNA-p1;Tb927.9.12550:mRNA-p1;Tb927.9.12610:mRNA-p1,"glycerol kinase, glycosomal",glk1,525440.0,1108700.0
 112,Tb927.11.5520:mRNA-p1,triosephosphate isomerase,TIM,582560.0,1544700.0
