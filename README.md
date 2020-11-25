@@ -5,7 +5,6 @@ This repository contains the data analysis of a proteomics experiment analysing 
 
 ![fig1](notebooks/FigX3_a.png?raw=true)
 ![fig1](notebooks/FigX3_b.png?raw=true)
-![fig1](notebooks/FigX3_c.png?raw=true)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
